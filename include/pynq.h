@@ -9,5 +9,5 @@
  * u8 pynqPins[8]: Byte array of pins which holds the pins where the PYNQ is connected to from LSB[0] to MSB[7]
  * Outputs a byte which is value that the pynq outputs
  */
-u8 readPynq(u8 pynqPins[8]);
+uint8_t readPynq(uint8_t pynqPins[8]);
 #endif //ARDUINO_CODE_AUTO_PYNQ_H

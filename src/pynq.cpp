@@ -4,10 +4,10 @@
 
 #include "pynq.h"
 
-u8 readPynq(u8* pynqPins) {
-	u8 val = 0;
-	for (u8 i = 0; i < sizeof(u8); ++i) {
-		val += (u8)digitalRead(pynqPins[i]) << i;
+uint8_t readPynq(uint8_t* pynqPins) {
+	uint8_t val = 0;
+	for (uint8_t i = 0; i < sizeof(uint8_t); ++i) {
+		val += (uint8_t)digitalRead(pynqPins[i]) << i;	// I love bitshifts
 		}
 	return val;
 }
